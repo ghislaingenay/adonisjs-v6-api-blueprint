@@ -1,0 +1,60 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+
+  "files.trimTrailingWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "github.copilot.enable": {
+    "*": true,
+    "typescript": true,
+    "javascript": true
+  },
+  "github.copilot.chat.enable": {
+    "*": true,
+    "typescript": true,
+    "javascript": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+  },
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "use JavaScript for all code. use camelCase for variable names, use snake case for code files. PascalCase for class names. Use spaces for indentation. Use single quotes for strings. Use 2 spaces for indentation."
+    },
+    {
+      "file": "./docs/spec.md"
+    },
+    {
+      "file": "./docs/agent.md"
+    },
+    {
+      "file": "./docs/server.md"
+    },
+    {
+      "file": "./docs/focus.md"
+    },
+    {
+      "file": "./docs/readme.md"
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "If there is a monorepository project, start by adding [<folder_name>], otherwelse add nothing. Then, use feat, fix, refactor, style, test, docs, or chore for the type of commit. Use the imperative mood for the subject line. Can add parenthesis to create the specific feature. Use the body for more details. Use the footer for any related issues."
+    }
+  ],
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "text": "All classes should have comments. Functions should have comments. Variables SHOULD NOT have comments."
+    }
+  ],
+  "github.copilot.chat.testGeneration.instructions": [
+    {
+      "text": "Use verbose class names that clearly state the test case. Use the AAA pattern for test cases. Arrange, Act, Assert."
+    }
+  ],
+  "cSpell.words": ["Photoshop"]
+}
