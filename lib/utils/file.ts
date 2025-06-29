@@ -1,3 +1,4 @@
+import { SizeReadable } from '#types'
 import { readFile } from 'node:fs/promises'
 
 export const toBase64 = async (filePath: string): Promise<string> => {

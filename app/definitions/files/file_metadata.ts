@@ -1,5 +1,6 @@
 import { FileFormat, FileType } from '#models/images/file_project_settings'
-import { getReadableFileSize, SizeReadable } from '#utils/file'
+import { SizeReadable } from '#types'
+import { getReadableFileSize } from '#utils/file'
 import { MultipartFile } from '@adonisjs/core/bodyparser'
 
 type NonSizeReadable = number
